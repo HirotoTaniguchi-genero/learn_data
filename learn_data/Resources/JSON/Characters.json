@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "name": "Alice",
+        "backgroundImageNames": ["background1", "background2", "background3"]
+    },
+    {
+        "id": 1,
+        "name": "Bob",
+        "backgroundImageNames": ["background1", "background2", "background3"],
+    }
+]

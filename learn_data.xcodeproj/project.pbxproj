@@ -13,6 +13,9 @@
 		A40B77572C05ABDD00F3949A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A40B77562C05ABDD00F3949A /* Base */; };
 		A40B77592C05ABDE00F3949A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40B77582C05ABDE00F3949A /* Assets.xcassets */; };
 		A40B775C2C05ABDE00F3949A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A40B775B2C05ABDE00F3949A /* Base */; };
+		A40B77642C05B44C00F3949A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40B77632C05B44C00F3949A /* Character.swift */; };
+		A40B77692C05B91800F3949A /* Characters.json in Resources */ = {isa = PBXBuildFile; fileRef = A40B77682C05B91800F3949A /* Characters.json */; };
+		A40B776B2C05BA3400F3949A /* CharacterDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40B776A2C05BA3400F3949A /* CharacterDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A40B77582C05ABDE00F3949A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A40B775B2C05ABDE00F3949A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A40B775D2C05ABDE00F3949A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A40B77632C05B44C00F3949A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A40B77682C05B91800F3949A /* Characters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Characters.json; sourceTree = "<group>"; };
+		A40B776A2C05BA3400F3949A /* CharacterDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		A40B774E2C05ABDD00F3949A /* learn_data */ = {
 			isa = PBXGroup;
 			children = (
+				A40B776C2C05BB3800F3949A /* Utility */,
+				A40B77662C05B8DB00F3949A /* Resources */,
+				A40B77652C05B45800F3949A /* Model */,
 				A40B774F2C05ABDD00F3949A /* AppDelegate.swift */,
 				A40B77512C05ABDD00F3949A /* SceneDelegate.swift */,
 				A40B77532C05ABDD00F3949A /* ViewController.swift */,
@@ -65,6 +74,38 @@
 				A40B775D2C05ABDE00F3949A /* Info.plist */,
 			);
 			path = learn_data;
+			sourceTree = "<group>";
+		};
+		A40B77652C05B45800F3949A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A40B77632C05B44C00F3949A /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A40B77662C05B8DB00F3949A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A40B77672C05B8ED00F3949A /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40B77672C05B8ED00F3949A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A40B77682C05B91800F3949A /* Characters.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A40B776C2C05BB3800F3949A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A40B776A2C05BA3400F3949A /* CharacterDecoder.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +168,7 @@
 			files = (
 				A40B77592C05ABDE00F3949A /* Assets.xcassets in Resources */,
 				A40B775C2C05ABDE00F3949A /* Base in Resources */,
+				A40B77692C05B91800F3949A /* Characters.json in Resources */,
 				A40B77572C05ABDD00F3949A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40B776B2C05BA3400F3949A /* CharacterDecoder.swift in Sources */,
 				A40B77542C05ABDD00F3949A /* ViewController.swift in Sources */,
 				A40B77502C05ABDD00F3949A /* AppDelegate.swift in Sources */,
 				A40B77522C05ABDD00F3949A /* SceneDelegate.swift in Sources */,
+				A40B77642C05B44C00F3949A /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

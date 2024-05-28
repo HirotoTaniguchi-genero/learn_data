@@ -12,8 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let characters = CharacterDecoder.getCharacters(fileName: "Characters")
+        print(characters)
+        print(characters[0].name)
+        print(characters[1].name)
+//        print(characters[0].backgroundImageNames[0])
+//        print(characters[0].colorCodes[0])
     }
-
-
 }
 
